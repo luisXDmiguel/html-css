@@ -1,55 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>desafio</title>
-</head>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
+    <title>boletim</title>
+    <style>
+     
+   
+        body {
+        font-family: Arial, Helvetica, sans-serif;  }
         table {
             border-collapse: collapse;
-            width: 300px;
+            width: 500px;
         }
         td {
             border: 1px solid black;
             padding: 10px;
-            text-align: center;
-        }
-</style>
-<body>
-    <h1>desafio de tabela numerica</h1>
-    <table>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td rowspan="2">3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
+            text-align: center; }
+
+            th {
+                border: 1px solid black;
+            padding: 10px;
+            text-align: center; }
+           
             
-        </tr>
-       <tr>
-        <td colspan="3">8</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td rowspan="2">10</td>
-        <td colspan="2">11</td>
-        <td>12</td>
-       </tr>
-       <tr>
-        <td>13</td>
-        <td>14</td>
-        <td>15</td>
-               
-       </tr>
-        
-    </table>
+           td.cor {
+            background-color: gray;
+            color: white;
+            text-align: left;
+           }
+           div#container {
+            overflow-x: auto;
+           }
+      
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <tr>
+                <td rowspan="2" class="cor">AREA</td>
+                <td rowspan="2"class="cor">DISCIPLINAS</td>
+                <td colspan="2"class="cor">NOTAS</td>
+                <td rowspan="2"class="cor">MEDIA</td>
+            </tr>
+            <tr>
+                <td class="cor">nota 1</td>
+                <td class="cor">nota 2</td>
+            </tr>
+            <tr>
+                <th rowspan="4">exatas</th>
+                <td>matematica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>fisica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>quimica</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>biologia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="cor">MÉDIA DE EXATAS</td>
+                <td class="cor">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">humanas</th>
+                <td>historia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>geografia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="cor">MÉDIA DE HUMANAS</td>
+                <td class="cor">0.0</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

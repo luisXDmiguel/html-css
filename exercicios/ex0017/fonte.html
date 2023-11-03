@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fontes em css</title>
-   <style>
-    body { font: italic bolder 1em 'work sans', sans-serif;}
-
-   </style>
+    <title>fonte personalizada</title>
+    <style>
+      @font-face {
+        font-family: 'natal';
+        src: url('font/Christmas\ Bell\ -\ Personal\ Use.otf') format( 'opentype' );
+        font-weight: normal;
+        font-style: normal;
+        
+      }
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+h1 { 
+    font-family: 'natal', Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+}
+    </style>
 </head>
 <body>
-    <h1>trabalhando com fontes</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, aliquid sapiente at alias exercitationem doloribus numquam perspiciatis error veritatis inventore cupiditate blanditiis architecto itaque, illum sit mollitia maiores quisquam reprehenderit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur animi aspernatur exercitationem? Quae iusto mollitia omnis iste quis rem tenetur quo possimus at voluptates minima voluptatibus porro, odio soluta maiores?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum itaque nisi quaerat quidem praesentium maxime. Totam voluptatem quasi dolores, optio distinctio quidem! Voluptate fuga inventore distinctio veniam vero voluptas.</p>
+    <h1>FONTE PERSONALIZADA</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ad id aut ipsam iste ratione architecto sit, praesentium inventore magni quos nisi, corporis delectus, odio officiis recusandae accusantium incidunt dolore!</p>
 </body>
 </html>
